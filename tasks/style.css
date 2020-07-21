@@ -1,0 +1,59 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card {
+    width: 100px;
+    /* margin-left: -40%; */
+    width: 40px;
+    /* border-style: solid; */
+    border-radius: 8%;
+    flex: none;
+    position: relative;
+}
+
+.card::before{
+    content: "";
+    display: block;
+    background-color: tomato;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250%;
+    transform: scaleX(1);
+    
+}
+
+.card:hover{
+    /* position: relative; */
+    /* z-index: 5; */
+    
+}
+
+.card:hover .card__inner {
+    background-color: #ccc;
+    transform: scaleX(1) translateY(-30%);
+
+
+
+}
+/* .card::after{
+    content: "";
+    display: block;
+} */
+
+.card__inner {
+    background-color: #fff;
+    border-radius: 10%;
+    padding-bottom: 350%;
+    width: 250%;
+    border: 2px solid;
+    transform: scaleX(0) translateY(0);
+    transition: transform 0.15s ease 0.5s;
+}
+
+#card2{
+
+} 
