@@ -1,0 +1,132 @@
+:root {
+    --card-width: 180px
+}
+
+body {
+    margin: 50px auto;
+    width: 500px;
+    /* border: 2px solid blue; */
+}
+
+.main {
+    /* border: 2px solid rgb(126, 241, 43); */
+    margin: 20px;
+    position: relative;
+    min-height: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: var(--card-width);
+    height: calc(var(--card-width) / 5 * 7);
+    background:  repeating-linear-gradient(-225deg, red 0, red 32px, #fff 0, #fff 40px);
+    border-radius: 8%;
+    border: 0.5px solid #000;
+}
+
+.card::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    content: "";
+    background-color: transparent;
+    border: 10px solid #fff;
+    border-radius: 15px;
+}
+
+.card:hover{
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0 , 0.5);
+    transition: 0.5s linear;
+    top: -30px;
+    z-index: 99;
+}
+
+.card:hover .procode,
+.card:hover .card-name-top,
+.card:hover .card-name-bottom {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.procode {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.card-name-top, .card-name-bottom{
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: coral;
+}
+
+.card-name-top::after, .card-name-bottom::after {
+    content: "♥";
+    position: absolute;
+    top: 90%;
+    left: 10%;
+}
+
+.card-name-top{
+    top: 3%;
+    left: 5%;
+}
+
+.card-name-bottom{
+    transform: rotate(180deg);
+    bottom: 3%;
+    right: 5%;
+}
+
+.crd1   {
+    left: 30px;
+    z-index: 1;
+}
+.crd2 {
+    left: 60px;
+    z-index: 2;
+}
+.crd3 {
+    left: 90px;
+    z-index: 3;
+}
+.crd4 {
+    left: 120px;
+    z-index: 4;
+}
+.crd5 {
+    left: 150px;
+    z-index: 5;
+}
+.crd6 {
+    left: 180px;
+    z-index: 6;
+}
+.crd7 {
+    left: 210px;
+    z-index: 7;
+}
+.crd8 {
+    left: 240px;
+    z-index: 8;
+}
+.crd9 {
+    left: 270px;
+    z-index: 9;
+}
+.crd10 {
+    left: 300px;
+    z-index: 10;
+}

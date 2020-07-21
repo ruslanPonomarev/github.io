@@ -1,0 +1,51 @@
+/* temporary */
+
+/* div{
+    border: 2px solid black;
+    margin: 5px;
+} */
+
+/* main */
+body {
+    margin: 50px auto;
+    width: 500px;
+    /* border: 2px solid blue; */
+}
+
+.blk {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 98px;
+    border: 2px solid black;
+
+}
+
+.main {
+    position: relative;
+    width: 20px;
+}
+
+.menus {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    display: none;
+}
+
+.item:hover + .menus, .menus:hover, .menu:hover {
+    color: red;
+    display: block;
+}
+
+.highlight {
+    display: none;
+    position: absolute;
+    top: -21px;
+    left: 65px;
+}
+
+.menu:hover .highlight {
+    display: block;
+}

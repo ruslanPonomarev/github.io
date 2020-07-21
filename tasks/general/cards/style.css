@@ -5,18 +5,20 @@
 }
 .card {
     width: 100px;
-    /* margin-left: -40%; */
     width: 40px;
-    /* border-style: solid; */
-    border-radius: 8%;
+    /* border-radius: 8%; */
     flex: none;
     position: relative;
+    margin-top: 50px;
+    
 }
 
 .card::before{
     content: "";
     display: block;
-    background-color: tomato;
+    background:  repeating-linear-gradient(-30deg, red 0, red 50px, #fff 0, #fff 60px);
+    border-radius: 8%;
+    border: 2px solid;
     position: absolute;
     left: 0;
     top: 0;
@@ -33,10 +35,8 @@
 }
 
 .card:hover .card__inner {
-    background-color: #ccc;
+    background-color: #fff;
     transform: scaleX(1) translateY(-30%);
-
-
 
 }
 /* .card::after{
@@ -53,7 +53,3 @@
     transform: scaleX(0) translateY(0);
     transition: transform 0.15s ease 0.5s;
 }
-
-#card2{
-
-} 
