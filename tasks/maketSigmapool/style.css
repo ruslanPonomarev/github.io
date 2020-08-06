@@ -154,16 +154,17 @@ header {
 
 .info {
   position: relative;
-  width: 1752px;
-  height: 1502px;
+  margin-left: 370px;
 }
 
 .info__crypto {
-  border: 1px solid blue;
+  margin-top: -100px;
   background: #ffffff;
-  box-shadow: 0px 0px 35px #d5d5e3;
+  width: 1188px;
+  height: 508px;
   display: flex;
   justify-content: space-around;
+  text-align: center;
 }
 .form {
   width: 346px;
@@ -177,4 +178,59 @@ header {
   font-family: Google Sans;
   font-size: 24px;
   line-height: 31px;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  padding: 29px 68px;
+}
+
+.news {
+  display: flex;
+  position: relative;
+  margin-top: 65px;
+  border: 1px solid green;
+  margin-left: 30px;
+  width: 1157px;
+  height: 508px;
+}
+.news__title {
+  position: absolute;
+  width: 1157px;
+  height: 63px;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.news__info {
+  width: 346px;
+  height: 324px;
+  position: absolute;
+  top: 120px;
+}
+
+.info-ads {
+  background: #ffffff;
+}
+.info__type {
+  color: #449ed1;
+  padding: 23px 20px;
+  width: 107px;
+  height: 14px;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.02em;
+}
+
+.info__subtitle {
+  padding-top: 49px;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.05em;
+  color: #333333;
+  font-weight: 600;
+}
+.info__text {
+  position: absolute;
+  top: 127px;
 }
