@@ -11,24 +11,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+  <div class="main">
       <div class="header">
         <div class="header__top">
           <div class="date">2018-11-02</div>
           <div class="time"><strong>10:54</strong></div>
-          <div class="crypto"><strong>BITCOIN</strong></div>
-          <div class="currency__cny"><strong>CNY:</strong> 43713.95</div>
-          <div class="currency__eur"><strong>EUR:</strong> 5553.60</div>
-          <div class="currency__gbp"><strong>GBP:</strong> 4877.79</div>
-          <div class="currency__usd"><strong>USD:</strong> 6356.73</div>
-          <div class="lang"><b>RU</b>| EN | ZH</div>
+          <div class="currency-data">
+            <div class="crypto"><strong>BITCOIN</strong></div>
+            <div class="currency__cny"><strong>CNY:</strong> 43713.95</div>
+            <div class="currency__eur"><strong>EUR:</strong> 5553.60</div>
+            <div class="currency__gbp"><strong>GBP:</strong> 4877.79</div>
+            <div class="currency__usd"><strong>USD:</strong> 6356.73</div>
+          </div>
+          <div class="lang">
+            <span><b>RU</b>|</span>
+            <span>EN | </span>
+            <span>ZH</span>
+          </div>
         </div>
         <div class="header__content">
           <div class="header__content-inner">
             <div class="header__logo">
-              <a href="#"> <img src="img/logo.png" alt="" />POOL.BTC </a>
+              <a href="#"> <img src="img/logo.png" alt="" /></a>
             </div>
-            <div class="currency-list"><img src="img/btc.png" alt="" />BTC</div>
+            <div class="header__logo-brand"><span>POOL.BTC</span></div>
+            <div class="currency-list">
+              <a href="" class="currency-list__option"> <img src="img/btc.png" alt="" />BTC</a>
+            </div>
             <nav class="menu">
               <ul>
                 <li><a href="#">Главная</a></li>
@@ -37,19 +46,18 @@
                 <li><a href="#">Блоки</a></li>
                 <li><a href="#">Майнеры</a></li>
                 <li><a href="#">Помощь</a></li>
-                <a class="header__btn" href="#">nickocean</a>
               </ul>
             </nav>
+            <a class="header__btn" href="#">nickocean</a>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <div class="hero-image">
+      <div class="empty-1">
+      </div>
         <div class="slider">
           <div class="slider__content">
             <div class="slider__content-title">
-              PPS НА SIGMAPOOL! ПОЛУЧАЙТЕ СТАБИЛЬНО 103% PPS ИЛИ 105% PPLNS
+              <p>PPS НА SIGMAPOOL! ПОЛУЧАЙТЕ СТАБИЛЬНО 103% PPS ИЛИ 105% PPLNS</p>
             </div>
             <div class="slider__content-text">
               Мы запустили PPS - более удобную для большинства майнеров схему
@@ -62,41 +70,68 @@
           </div>
           <div class="slider__laptop"></div>
         </div>
+        <div class="empty-2"></div>
+      <div class="info__crypto">
+        <div class="form">
+          <div class="form__title"><img src="img/btc.png" alt="" />Bitcoin</div>
+          <div class="text-row"><p>Хешрейт пула</p> <p>Кол-во майнеров</p></div>
+          <a class="start__btn" href="#">Быстрый старт</a>
+          <a class="view__btn" href="#">Обзор</a>
+        </div>
+        <div class="form">
+          <div class="form__title">Lightcoin</div>
+        </div>
+        <div class="form">
+          <div class="form__title">Dashcoin</div>
+        </div>
       </div>
-      <section class="info">
-        <div class="info__crypto">
-          <div class="form">
-            <div class="title bitcoin">
-              Bitcoin
-            </div>
+      <div class="news">
+        <div class="news__title">
+          News
+        </div>
+        <div class="container">
+          <div class="box-1">
+            <h4 class="blue">ОБЪЯВЛЕНИЕ</h4>
+            <h2>КОМПЕНСАЦИИ ЗА 2 НОЯБРЯ!</h2>
+            <p>
+              Мы запустили PPS - более удобную для большинства майнеров схему
+              начислений. PPLNS остается доступным. С уважением, команда
+              SigmaPoool!
+            </p>
+            <h5>Понедельник, 02 Сентября</h5>
           </div>
-          <div class="form">
-            <div class="title lightcoin">Lightcoin</div>
+          <div class="box-2">
+            <h4 class="red">НОВОСТИ</h4>
+            <h2>PPS НА SIGMAPOOL! ПОЛУЧАЙТЕ 103% PPS ИЛИ 105% PPLNS</h2>
+            <p>
+              Мы запустили PPS - более удобную для большинства майнеров схему
+              начислений. PPLNS остается доступным для хардкорных майнеров.
+              Присоединяйтесь сейчас и получайте сверхнаграды! Период бонусов
+              ограничен!
+            </p>
+            <h5>Понедельник, 02 Сентября</h5>
           </div>
-          <div class="form">
-            <div class="title dashcoin">Dashcoin</div>
+          <div class="box-3">
+            <h4 class="orange">АКЦИИ</h4>
+            <h2>ПОДКЛЮЧАЙТЕСЬ К DASH И ПОЛУЧИТЕ БОНУСЫ</h2>
+            <p>
+              Мы запустили PPS - более удобную для большинства майнеров схему
+              начислений. PPLNS остается доступным для хардкорных майнеров.
+              Присоединяйтесь сейчас и получайте сверхнаграды! Период бонусов
+              ограничен!
+            </p>
+            <h5>Понедельник, 02 Сентября</h5>
           </div>
         </div>
-        <div class="news">
-          <div class="news__title">
-            News
-          </div>
-          <div class="news__info">
-            <div class="news__info-ads">
-              <div class="info__type">ОБЪЯВЛЕНИЕ</div>
-              <div class="info__subtitle">КОМПЕНСАЦИИ ЗА 2 НОЯБРЯ!</div>
-              <div class="info__text">
-                Мы запустили PPS - более удобную для большинства майнеров схему
-                начислений. PPLNS остается доступным. С уважением, команда
-                SigmaPoool!
-              </div>
-            </div>
-            <div class="news__info-news"></div>
-            <div class="news__info-bonus"></div>
-          </div>
+      </div>
+      <div class="tweets">
+        <div class="tweets-title">
+          Tweets
+          <input type="button" class="tweet-CTA">Читать</input>
         </div>
-      </section>
-    </main>
+        <div class="tweet-card"></div>
+      </div>
     <footer></footer>
+    </div>
   </body>
 </html>

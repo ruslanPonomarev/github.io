@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../fonts/ProximaNova-Regular");
+}
 * {
   box-sizing: border-box;
 }
@@ -18,20 +22,17 @@ body {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
+  background-image: url(./img/hero.svg);
+  background-repeat: no-repeat;
 }
 
-.container {
-  min-width: 1920px;
-  /* padding: 0px 380px; */
+.main {
+  width: 1155px;
   margin: 0 auto;
+  margin-left: 400px;
+  border: 2px solid red;
 }
 
-header {
-}
-.header {
-  position: relative;
-  padding-top: -100px;
-}
 .header__top {
   font-size: 14px;
   line-height: 17px;
@@ -39,11 +40,36 @@ header {
   padding-bottom: 8px;
   border-bottom: 1px solid #dddddd;
   display: flex;
-  justify-content: space-around;
+  color: #ffffff;
+  font-family: "ProximaNova-Regular";
 }
+
+.date,
+.time {
+  margin-right: 25px;
+}
+
+.currency-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100px;
+  margin-left: 400px;
+}
+
 .header__logo {
   width: 40.95px;
   height: 41px;
+  color: #ffffff;
+
   background: #ffffff;
 }
 
@@ -67,13 +93,48 @@ header {
 .header__content {
   padding: 34px 0px 23px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  font-family: "ProximaNova-Regular";
 }
 
 .header__content-inner {
   display: flex;
   justify-content: space-between;
+}
+
+.header__logo-brand {
+  font-family: Gotham Pro;
+  font-size: 21px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  padding-left: 10px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.currency-list {
+  margin-left: 61px;
+}
+
+.currency-list img {
+  width: 16px;
+  height: 16px;
+}
+
+.currency-list__option {
+  width: 105px;
+  height: 35px;
+  border: 1.5px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .menu li {
@@ -84,32 +145,38 @@ header {
   font-size: 20px;
   line-height: 36px;
   padding: 0px 16px;
+  color: #ffffff;
 }
 
 .menu a + a {
   padding-left: 20px;
 }
-.hero-image {
-  background-image: url(./img/hero.svg);
-  width: 1920px;
-  height: 1013px;
-  position: relative;
+.empty-1 {
+  height: 74px;
+  border: 2px solid yellow;
+}
+.empty-2 {
+  height: 100px;
+  border: 2px solid yellow;
 }
 .slider {
-  position: absolute;
-  left: 389px;
-  top: 118px;
+  width: 1200px;
+  height: 569px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid white;
 }
 
 .slider__content {
+  border: 1px solid black;
 }
 
 .slider__content-title {
   width: 511px;
   height: 107px;
-  position: absolute;
-  top: 128px;
   font-family: Google Sans;
+  margin-top: 132px;
   font-size: 28px;
   line-height: 36px;
   display: flex;
@@ -119,7 +186,7 @@ header {
 }
 
 .slider__content-text {
-  position: absolute;
+  margin-top: 25px;
   width: 628px;
   height: 96px;
   font-family: Proxima Nova;
@@ -127,12 +194,10 @@ header {
   line-height: 24px;
   letter-spacing: 0.05em;
   color: #ffffff;
-  top: 272px;
 }
 
 .slider__content-CTA {
-  position: absolute;
-  top: 385px;
+  margin-top: 25px;
   background: #ffffff;
   border: 1.5px solid #ffffff;
   box-sizing: border-box;
@@ -144,77 +209,68 @@ header {
 }
 
 .slider__laptop {
-  position: absolute;
+  margin-top: 46px;
+  margin-left: -30px;
   width: 629px;
   height: 496px;
   background: url(./img/laptop.png);
-  top: 46px;
-  left: 597px;
-}
-
-.info {
-  position: relative;
-  margin-left: 370px;
+  z-index: -44;
 }
 
 .info__crypto {
-  margin-top: -100px;
-  background: #ffffff;
-  width: 1188px;
-  height: 508px;
   display: flex;
-  justify-content: space-around;
-  text-align: center;
 }
 .form {
+  padding: 35px 36px;
+  display: flex;
   width: 346px;
   height: 436px;
   background: #ffffff;
   box-shadow: 0px 0px 35px #d5d5e3;
   border-radius: 5px;
+  margin-right: 58px;
 }
-
-.title {
+.form__title {
   font-family: Google Sans;
   font-size: 24px;
   line-height: 31px;
-  text-align: center;
   display: flex;
   justify-content: start;
-  padding: 29px 68px;
+  text-align: center;
+  margin-top: 29px;
+  margin-left: 68px;
+  color: #333333;
 }
-
+.text-row {
+  font-family: Proxima Nova;
+  font-size: 14px;
+  line-height: 17px;
+  justify-content: space-between;
+}
+.start__btn {
+}
+.view__btn {
+}
 .news {
-  display: flex;
   position: relative;
-  margin-top: 65px;
-  border: 1px solid green;
-  margin-left: 30px;
+  margin-top: 35px;
   width: 1157px;
   height: 508px;
 }
-.news__title {
-  position: absolute;
-  width: 1157px;
-  height: 63px;
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: 400;
-}
 
-.news__info {
+.info-card {
+  margin-bottom: 39px;
   width: 346px;
   height: 324px;
-  position: absolute;
-  top: 120px;
-}
-
-.info-ads {
   background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 35px #d5d5e3;
+  display: flex;
+  flex-direction: row;
 }
 .info__type {
   color: #449ed1;
-  padding: 23px 20px;
+  padding: 39px 29px;
   width: 107px;
   height: 14px;
   font-size: 14px;
@@ -223,7 +279,7 @@ header {
 }
 
 .info__subtitle {
-  padding-top: 49px;
+  padding: 0px 29px;
   font-size: 24px;
   line-height: 31px;
   letter-spacing: 0.05em;
@@ -232,5 +288,88 @@ header {
 }
 .info__text {
   position: absolute;
-  top: 127px;
+  top: 147px;
+  padding: 0px 29px;
+}
+
+.info__date {
+  position: absolute;
+  bottom: 5px;
+  left: 29px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #afafaf;
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+  position: relative;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.05em;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 13px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.orange {
+  color: orange;
+}
+
+h5 {
+  bottom: 17px;
+  font-family: Proxima Nova;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #afafaf;
+  position: absolute;
+  bottom: 17px;
+}
+
+.container div {
+  max-width: 346px;
+  height: 324px;
+  padding: 16px 18px;
+  margin-bottom: 26px;
+  background: #ffffff;
+  box-shadow: 0px 0px 35px #d5d5e3;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-out;
+}
+.box-2 {
+  margin: 0px 58px;
+}
+
+.tweets-title {
+  font-family: Google Sans;
+  font-size: 28px;
+  line-height: 36px;
+  color: #333333;
+}
+.tweet-CTA {
+  float: right;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 10px;
+  padding-left: 30px;
+  width: 107px;
+  height: 38px;
+  border-radius: 21px;
+  border: 1px solid steelblue;
 }
