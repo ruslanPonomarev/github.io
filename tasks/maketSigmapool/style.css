@@ -2,6 +2,18 @@
   font-family: "ProximaNova-Regular";
   src: url("../fonts/ProximaNova-Regular");
 }
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../fonts/ProximaNova-Bold");
+}
+@font-face {
+  font-family: "ProductSans-Regular";
+  src: url("./fonts/Product\ Sans\ Regular.ttf");
+}
+@font-face {
+  font-family: "ProductSans-Bold";
+  src: url("./fonts/Product\ Sans\ Bold.ttf");
+}
 * {
   box-sizing: border-box;
 }
@@ -30,7 +42,7 @@ body {
   width: 1155px;
   margin: 0 auto;
   margin-left: 400px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .header__top {
@@ -153,11 +165,9 @@ body {
 }
 .empty-1 {
   height: 74px;
-  border: 2px solid yellow;
 }
 .empty-2 {
   height: 100px;
-  border: 2px solid yellow;
 }
 .slider {
   width: 1200px;
@@ -165,11 +175,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid white;
 }
 
 .slider__content {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .slider__content-title {
@@ -222,7 +231,6 @@ body {
 }
 .form {
   padding: 35px 36px;
-  display: flex;
   width: 346px;
   height: 436px;
   background: #ffffff;
@@ -231,31 +239,96 @@ body {
   margin-right: 58px;
 }
 .form__title {
-  font-family: Google Sans;
+  font-family: "ProductSans-Bold";
   font-size: 24px;
   line-height: 31px;
-  display: flex;
-  justify-content: start;
-  text-align: center;
-  margin-top: 29px;
-  margin-left: 68px;
   color: #333333;
+  text-align: left;
 }
-.text-row {
-  font-family: Proxima Nova;
+
+span {
+  margin-right: 10px;
+}
+
+.form__row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: "ProximaNova-Regular";
   font-size: 14px;
   line-height: 17px;
+}
+.form__row-bold {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  text-align: left;
+  font-family: "ProximaNova-Bold";
+  font-size: 20px;
+  line-height: 24px;
 }
-.start__btn {
+.form__row-bold-right {
+  text-align: left;
 }
-.view__btn {
+
+.form__more-info {
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  color: #2f80ed;
+  margin-top: 13px;
+}
+.start {
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.form__start-btn {
+  width: 276px;
+  height: 42px;
+  background: linear-gradient(58.78deg, #2a1c75 -599.37%, #5639b7 81.13%);
+  border-radius: 5px;
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.form__view-btn {
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #5639b7;
+  height: 42px;
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #5639b7;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 .news {
   position: relative;
   margin-top: 35px;
   width: 1157px;
   height: 508px;
+}
+.news__title {
+  margin-top: 83px;
+  margin-bottom: 66px;
+  font-family: "ProductSans-Regular";
+  font-size: 28px;
+  line-height: 36px;
+  color: #333333;
 }
 
 .info-card {
@@ -355,15 +428,17 @@ h5 {
 .box-2 {
   margin: 0px 58px;
 }
-
 .tweets-title {
-  font-family: Google Sans;
+  display: flex;
+  justify-content: space-between;
+}
+.tweets-title__text {
+  font-family: "ProductSans-Regular";
   font-size: 28px;
   line-height: 36px;
   color: #333333;
 }
-.tweet-CTA {
-  float: right;
+.tweets-CTA {
   font-size: 14px;
   line-height: 17px;
   padding-top: 10px;
@@ -371,5 +446,90 @@ h5 {
   width: 107px;
   height: 38px;
   border-radius: 21px;
-  border: 1px solid steelblue;
+  border: 1px solid #5639b7;
+  color: #5639b7;
+}
+
+.tweets-cards {
+  margin-top: 31px;
+  display: flex;
+}
+.tweet-card {
+  width: 346px;
+  margin-right: 58px;
+}
+.tweet-card__top {
+  display: flex;
+  justify-content: space-between;
+}
+.tweet-card__top-date {
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #afafaf;
+}
+.tweet-card__text {
+  margin-top: 10px;
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+
+  color: #333333;
+}
+.tweet-card__img {
+  margin-left: -36px;
+  margin-top: -20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 46px;
+}
+.footer-top__crypto {
+  width: 105px;
+  height: 35px;
+  border: 1.5px solid #ccd4dc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  padding-left: 17px;
+  margin-left: 30px;
+}
+.footer-top__navlist {
+}
+ul.navlist {
+  min-width: 500px;
+  list-style: none;
+}
+
+ul.navlist li {
+  padding-left: 39px;
+  display: inline;
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+  color: #333333;
+}
+.footer-bottom {
+  height: 37px;
+  margin-top: 32px;
+  padding: 10px 0;
+  border-top: 1px solid #ccd4dc;
+  font-family: Proxima Nova;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #333333;
+  opacity: 0.6;
 }
