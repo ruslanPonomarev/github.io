@@ -1,18 +1,18 @@
 @font-face {
   font-family: "ProximaNova-Regular";
-  src: url("../fonts/ProximaNova-Regular");
+  src: url("fonts/ProximaNova-Regular.otf");
 }
 @font-face {
   font-family: "ProximaNova-Bold";
-  src: url("../fonts/ProximaNova-Bold");
+  src: url("fonts/ProximaNova-Bold");
 }
 @font-face {
   font-family: "ProductSans-Regular";
-  src: url("./fonts/Product\ Sans\ Regular.ttf");
+  src: url("fonts/ProductSansRegular.ttf");
 }
 @font-face {
   font-family: "ProductSans-Bold";
-  src: url("./fonts/Product\ Sans\ Bold.ttf");
+  src: url("fonts/ProductSansBold.ttf");
 }
 * {
   box-sizing: border-box;
@@ -156,7 +156,7 @@ body {
 .menu a {
   font-size: 20px;
   line-height: 36px;
-  padding: 0px 16px;
+  padding: 0px 14px;
   color: #ffffff;
 }
 
@@ -184,7 +184,7 @@ body {
 .slider__content-title {
   width: 511px;
   height: 107px;
-  font-family: Google Sans;
+  font-family: "ProductSans-Regular";
   margin-top: 132px;
   font-size: 28px;
   line-height: 36px;
@@ -198,7 +198,7 @@ body {
   margin-top: 25px;
   width: 628px;
   height: 96px;
-  font-family: Proxima Nova;
+  font-family: "ProximaNova-Regular";
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.05em;
@@ -385,6 +385,7 @@ h2 {
   font-size: 24px;
   line-height: 31px;
   letter-spacing: 0.05em;
+  font-family: "ProximaNova-Regular";
 }
 
 h4 {
@@ -392,6 +393,7 @@ h4 {
   line-height: 13px;
   /* identical to box height */
   letter-spacing: 0.02em;
+  font-family: "ProximaNova-Regular";
 }
 .red {
   color: red;
@@ -405,13 +407,17 @@ h4 {
 
 h5 {
   bottom: 17px;
-  font-family: Proxima Nova;
+  font-family: "ProximaNova-Regular";
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.05em;
   color: #afafaf;
   position: absolute;
   bottom: 17px;
+}
+
+p {
+  font-family: "ProximaNova-Regular";
 }
 
 .container div {
@@ -526,7 +532,7 @@ ul.navlist li {
   margin-top: 32px;
   padding: 10px 0;
   border-top: 1px solid #ccd4dc;
-  font-family: Proxima Nova;
+  font-family: "ProximaNova-Regular";
   font-size: 14px;
   line-height: 17px;
   /* identical to box height */
