@@ -325,10 +325,10 @@ span {
 .news__title {
   margin-top: 83px;
   margin-bottom: 66px;
-  font-family: "ProductSans-Regular";
   font-size: 28px;
   line-height: 36px;
   color: #333333;
+  font-family: "ProductSans-Bold";
 }
 
 .info-card {
@@ -439,7 +439,7 @@ p {
   justify-content: space-between;
 }
 .tweets-title__text {
-  font-family: "ProductSans-Regular";
+  font-family: "ProductSans-Bold";
   font-size: 28px;
   line-height: 36px;
   color: #333333;
