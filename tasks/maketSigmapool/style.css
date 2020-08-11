@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "GoogleSans-Bold";
+  src: url("fonts/GoogleSans-Bold.woff2");
+}
+@font-face {
   font-family: "ProximaNova-Regular";
   src: url("fonts/ProximaNova-Regular.otf");
 }
@@ -330,7 +334,7 @@ span {
   font-weight: bold;
   line-height: 36px;
   color: #333333;
-  font-family: "ProductSans-Bold";
+  font-family: "GoogleSans-Bold";
 }
 
 .info-card {
@@ -441,7 +445,7 @@ p {
   justify-content: space-between;
 }
 .tweets-title__text {
-  font-family: "ProductSans-Bold";
+  font-family: "GoogleSans-Bold";
   font-size: 28px;
   line-height: 36px;
   font-weight: bold;
