@@ -3,6 +3,10 @@
   src: url("fonts/GoogleSans-Bold.woff2");
 }
 @font-face {
+  font-family: "ProximaNovaFont";
+  src: url("fonts/ProximaNovaFont");
+}
+@font-face {
   font-family: "ProximaNova-Regular";
   src: url("fonts/ProximaNova-Regular.otf");
 }
@@ -133,11 +137,17 @@ body {
 
 .currency-list {
   margin-left: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
 .currency-list img {
-  width: 16px;
-  height: 16px;
+  width: 19px;
+  height: 19px;
+  margin-right: 10px;
+  float: left;
+  margin-left: 17px;
 }
 
 .currency-list__option {
@@ -151,7 +161,9 @@ body {
   line-height: 17px;
   color: white;
   text-align: center;
-  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .menu li {
@@ -262,7 +274,7 @@ span {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  font-family: "ProximaNova-Regular";
+  font-family: "ProximaNovaFont";
   font-size: 14px;
   line-height: 17px;
 }
@@ -271,7 +283,7 @@ span {
   flex-direction: row;
   justify-content: space-between;
   text-align: left;
-  font-family: "ProximaNova-Bold";
+  font-family: "ProximaNovaFont";
   font-size: 20px;
   line-height: 24px;
 }
