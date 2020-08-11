@@ -327,6 +327,7 @@ span {
   margin-top: 83px;
   margin-bottom: 66px;
   font-size: 28px;
+  font-weight: bold;
   line-height: 36px;
   color: #333333;
   font-family: "ProductSans-Bold";
@@ -443,6 +444,7 @@ p {
   font-family: "ProductSans-Bold";
   font-size: 28px;
   line-height: 36px;
+  font-weight: bold;
   color: #333333;
 }
 .tweets-CTA {
