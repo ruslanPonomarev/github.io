@@ -8,6 +8,18 @@
   justify-content: center;
   align-items: flex-end;
 }
+
+.spin .arrows {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .timer__minutes {
   margin-left: 10px;
 }
@@ -27,15 +39,13 @@
 }
 
 .time-input {
-  font-size: 30px;
+  flex-grow: 1;
+}
+.time-input input {
   border: 3px solid black;
-  display: flex;
+  width: 100%;
 }
 
-:placeholder-shown {
-  font-size: 20px;
-  width: 100px;
-}
 .start-button {
   border: 3px solid black;
   display: flex;

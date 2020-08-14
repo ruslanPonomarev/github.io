@@ -19,12 +19,18 @@
       </div>
       <div class="time-bottom">
         <div class="time-input">
-          <input type="number" placeholder=" - - : - -" />
-          <i class="icon-clock-1"></i>
+          <input type="time" />
+          <!-- <i class="icon-clock-1"></i> -->
         </div>
-        <div class="start-button">
+        <button class="start-button" onclick="startSpin()">
           <i class="icon-play"></i>
-        </div>
+        </button>
+        <script>
+          function startSpin() {
+            document.querySelector(".main").classList.add("spin");
+            console.log("?");
+          }
+        </script>
       </div>
     </div>
   </body>
