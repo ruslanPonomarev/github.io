@@ -1,9 +1,20 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  background-color: #fff;
+  position: relative;
+}
 .container {
-  margin: 250px;
+  margin: 250px auto;
+  min-width: 992px;
+  padding: 200px 10px 350px 10px;
+  border: 1px solid red;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  position: relative;
 }
 
 .container__step-1 {
@@ -46,40 +57,38 @@
 
   border: solid 5px black;
 }
+.ball-wrapper {
+  left: 10px;
+  top: 240px;
+  position: absolute;
+  animation: bouncing-ball;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0, 1.16, 1, 1);
+}
 .ball {
   width: 50px;
   height: 50px;
+  animation: bouncing-ball2;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
   background: red;
   border: 3px solid;
   border-radius: 50%;
-  position: absolute;
-  top: 45px;
-  animation: bounce 5s infinite;
-  -webkit-animation: bounce 5s infinite;
 }
-@keyframes bounce {
-  0% {
-    left: 0px;
-  }
-  20% {
-    top: 15px;
-    left: 65px;
-  }
 
-  40% {
-    top: -15px;
-    left: 205px;
-  }
-  60% {
-    top: -35px;
-    left: 305px;
-  }
-  80% {
-    top: -65px;
-    left: 405px;
+@keyframes bouncing-ball {
+  0% {
+    transform: translate(0, 0);
   }
   100% {
-    top: -15px;
-    left: 205px;
+    transform: translate(95px, -25px);
+  }
+}
+@keyframes bouncing-ball2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0px, -50px);
   }
 }
