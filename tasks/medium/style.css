@@ -1,0 +1,155 @@
+html {
+  list-style: none;
+}
+body {
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
+}
+.ch_lang_large {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .ch_lang_large {
+    display: block;
+  }
+  .ch_lang {
+    display: none;
+  }
+}
+
+.extra_small,
+.small,
+.medium,
+.large {
+  display: none;
+}
+
+@media (max-width: 749px) {
+  .extra_small {
+    display: block;
+  }
+  .search-form {
+    display: none;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 969px) {
+  .smal {
+    display: block;
+  }
+}
+
+@media (min-width: 970px) and (max-width: 1169px) {
+  .medium {
+    display: block;
+  }
+}
+
+@media (min-width: 1170px) {
+  .large {
+    display: block;
+  }
+}
+
+.main {
+}
+
+@media (min-width: 768px) {
+  .header-top {
+    background-color: #ccc;
+  }
+}
+.header-top-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  font-family: Google Sans;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+}
+.header-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icon-menu {
+  font-size: 24px;
+}
+input {
+  width: 641px;
+}
+button {
+  width: 258px;
+  font-family: Google Sans;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 10px;
+  color: #ffffff;
+  background: linear-gradient(245.23deg, #32228a -43.18%, #745acd 100%), #c4c4c4;
+  border-radius: 3px;
+}
+img {
+  width: 357.88px;
+  height: 169px;
+}
+.title {
+  font-family: Google Sans;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #333333;
+}
+.card {
+  width: 253px;
+  height: 400px;
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e8e8ee;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.div {
+  width: 70px;
+  height: 70px;
+  margin: 2px;
+  background-image: url("/img/chair.png");
+  background-repeat: no-repeat;
+}
+.div_child {
+  min-width: 150px;
+  flex: 1 1;
+  margin: 5px;
+  height: 200px;
+}
+.div_child-title {
+  position: absolute;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+  top: 150px;
+}
+
+button {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  width: 167px;
+  height: 18px;
+  font-family: Google Sans;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 13px 25px;
+  color: #ffffff;
+  background: linear-gradient(245.23deg, #32228a -43.18%, #745acd 100%), #c4c4c4;
+  border-radius: 3px;
+}
