@@ -63,7 +63,7 @@ body {
   position: absolute;
   animation: bouncing-ball;
   animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0, 1.16, 1, 1);
+  animation-timing-function: ease-out;
 }
 .ball {
   width: 50px;
@@ -80,15 +80,18 @@ body {
   0% {
     transform: translate(0, 0);
   }
-  100% {
+  20% {
     transform: translate(95px, -25px);
+  }
+  100% {
+    transform: translate(195px, -25px);
   }
 }
 @keyframes bouncing-ball2 {
   0% {
     transform: translate(0, 0);
   }
-  50% {
-    transform: translate(0px, -50px);
+  10% {
+    transform: translate(0px, -25px);
   }
 }
