@@ -29,6 +29,8 @@ let value12 = 2 ** 16;
 console.log(value12);
 let value13 = 81 ** (1 / 2);
 console.log(value13);
+let b = 1;
+let d = 1;
 let a = b++;
 console.log(a);
 let c = ++d;
